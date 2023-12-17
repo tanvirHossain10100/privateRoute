@@ -13,7 +13,9 @@ function App() {
   return (
     <>
       <Header></Header>
-      <Outlet></Outlet>
+      <div className="outlet">
+        <Outlet></Outlet>
+      </div>
     </>
   );
 }

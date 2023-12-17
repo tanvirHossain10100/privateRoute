@@ -5,3 +5,13 @@
   text-decoration: none;
   list-style: none;
 }
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.outlet {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.616);
+}

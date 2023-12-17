@@ -4,7 +4,6 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 import { app } from "../../firebase/firebase";
 export const LoginForm = () => {
-  
   const [getAuths, setGetAutn] = useState({});
   const [inputsFields, setInputFields] = useState({
     name: "",
@@ -93,7 +92,7 @@ export const LoginForm = () => {
               />
             </div>
             <button className="submitBtn text-6xl" type="submit">
-              signin
+              Login
             </button>
           </form>
         </div>

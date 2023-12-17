@@ -7,19 +7,94 @@ export const Navbar = () => {
         <nav>
           <ul>
             <li>
-              <NavLink to="/">HOME</NavLink>
+              <NavLink
+                to="/"
+                style={({ isActive, isTransitioning }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    color: isActive ? "white" : "black",
+
+                    viewTransitionName: isTransitioning ? "slide" : "",
+                  };
+                }}
+              >
+                HOME
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/products">PRODUCTS</NavLink>
+              <NavLink
+                to="/currentNews"
+                style={({ isActive, isTransitioning }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    color: isActive ? "white" : "black",
+
+                    viewTransitionName: isTransitioning ? "slide" : "",
+                  };
+                }}
+              >
+                NEWS
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/abouts">ABOUTUS</NavLink>
+              <NavLink
+                to="/products"
+                style={({ isActive, isTransitioning }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    color: isActive ? "white" : "black",
+
+                    viewTransitionName: isTransitioning ? "slide" : "",
+                  };
+                }}
+              >
+                PRODUCTS
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/blog">BLOG</NavLink>
+              <NavLink
+                style={({ isActive, isPending, isTransitioning }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    color: isActive ? "white" : "black",
+
+                    viewTransitionName: isTransitioning ? "slide" : "",
+                  };
+                }}
+                to="/abouts"
+              >
+                ABOUTUS
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/login">SINGUP</NavLink>
+              <NavLink
+                to="/blog"
+                style={({ isActive, isTransitioning }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    color: isActive ? "white" : "black",
+
+                    viewTransitionName: isTransitioning ? "slide" : "",
+                  };
+                }}
+              >
+                BLOG
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                style={({ isActive, isTransitioning }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    color: isActive ? "white" : "black",
+
+                    viewTransitionName: isTransitioning ? "slide" : "",
+                  };
+                }}
+                to="/login"
+              >
+                SINGUP
+              </NavLink>
             </li>
           </ul>
         </nav>
