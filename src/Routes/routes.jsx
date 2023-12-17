@@ -19,7 +19,7 @@ export const routes = createBrowserRouter([
       {
         path: "/currentNews",
         element: <CurrentNews></CurrentNews>,
-        loader: () => {
+        loader: async () => {
           return fetch(
             "https://newsapi.org/v2/everything?q=tesla&from=2023-11-17&sortBy=publishedAt&apiKey=a0ce64c4a9894ab29f7e86c8c63091f4"
           );
