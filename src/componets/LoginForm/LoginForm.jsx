@@ -4,6 +4,10 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 import { app } from "../../firebase/firebase";
 export const LoginForm = () => {
+  const [signUp, setSignUp] = useState(false);
+  const handleSignUp = () => {
+    setSignUp(!signUp);
+  };
   const [getAuths, setGetAutn] = useState({});
   const [inputsFields, setInputFields] = useState({
     name: "",
@@ -92,9 +96,12 @@ export const LoginForm = () => {
               />
             </div>
             <button className="submitBtn text-6xl" type="submit">
-              Login
+              {signUp ? "Sign up" : "Log in"}
             </button>
           </form>
+          <div className="createAccount">
+            <p onClick={handleSignUp}>Don not have account?Create Account...</p>
+          </div>
         </div>
       </div>
     </>
