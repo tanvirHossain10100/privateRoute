@@ -44,7 +44,7 @@ export const News = ({
             <div className="overly"></div>
           </div>
           <div className="news-info">
-            <h1>{title.slice(0, 20)}...</h1>
+            <h1>{title?.slice(0, 20)}...</h1>
             <p>
               <p>{description}</p>
             </p>

@@ -9,7 +9,7 @@ export const CurrentNews = () => {
     <>
       <div className="currentNews">Total Total:{news.articles?.length}</div>
       <div className="newsContainer">
-        {articles.map((news, index) => (
+        {articles?.map((news, index) => (
           <News key={index} news={news}></News>
         ))}
       </div>
