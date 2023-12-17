@@ -2,7 +2,7 @@
   background-image: url("./../../../assets/login/loginBack.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   min-width: 100%;
   display: flex;
   align-items: center;

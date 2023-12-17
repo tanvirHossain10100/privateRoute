@@ -1,0 +1,6 @@
+.nav nav ul {
+  display: flex;
+  align-items: center;
+  line-height: 80px;
+  justify-content: space-around;
+}
