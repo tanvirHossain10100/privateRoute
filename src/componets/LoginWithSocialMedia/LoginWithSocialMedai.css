@@ -1,0 +1,57 @@
+.socailMedaias ul {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.socailMedaias ul li {
+  width: 100px;
+  /* padding: ; */
+}
+.socailMedaias ul li {
+  /* display: flex; */
+  display: inline-flex;
+  align-items: center;
+  border-radius: 5px;
+  gap: 5px;
+}
+.google {
+  background-color: rgb(208, 103, 103);
+  transition: 0.25s;
+}
+.google:hover {
+  background-color: rgb(212, 55, 55);
+}
+.socailMedaias li {
+  transition: 0.25s;
+  cursor: pointer;
+  padding: 3px 0 3px 2px;
+}
+.socailMedaias .google:hover {
+  color: rgb(245, 203, 203);
+}
+.socailMedaias .git {
+  background-color: black;
+  color: white;
+}
+.socailMedaias .git:hover {
+  color: rgb(249, 228, 228);
+}
+.socailMedaias .microsoft {
+  background-color: yellowgreen;
+  color: black;
+}
+.socailMedaias .microsoft:hover {
+  color: white;
+}
+.socailMedaias .fb {
+  background-color: #5670a4;
+}
+.socailMedaias .fb:hover {
+  color: rgb(240, 225, 225);
+}
+.socailMedaias .twitter {
+  background-color: rgb(109, 182, 238);
+}
+.socailMedaias .twitter:hover {
+  color: rgb(240, 225, 225);
+}
